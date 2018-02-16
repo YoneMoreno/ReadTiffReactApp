@@ -1,3 +1,5 @@
+/* global Tiff*/
+
 import React, {Component} from 'react';
 import './App.css';
 
@@ -7,7 +9,7 @@ class App extends React.Component {
         this.onChange = this.onChange.bind(this);
     }
 
-    onChange(file) {
+    onChange(event) {
         const canvasNode = this.canvas;
         const fileReader = new FileReader();
 
